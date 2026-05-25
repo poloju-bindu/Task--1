@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Personal Profile Page</title>
+
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"/>
+
+    <style>
+        *{
+            margin:0;
+            padding:0;
+            box-sizing:border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body{
+            background:#f4f4f4;
+            color:#333;
+            line-height:1.6;
+        }
+
+        header{
+            background:#4a90e2;
+            color:white;
+            text-align:center;
+            padding:40px 20px;
+        }
+
+        header img{
+            width:150px;
+            height:150px;
+            border-radius:50%;
+            border:4px solid white;
+            object-fit:cover;
+            margin-bottom:15px;
+        }
+
+        nav{
+            background:#333;
+            padding:10px;
+            text-align:center;
+        }
+
+        nav a{
+            color:white;
+            text-decoration:none;
+            margin:0 15px;
+            font-weight:bold;
+        }
+
+        nav a:hover{
+            color:#4a90e2;
+        }
+
+        .container{
+            width:90%;
+            max-width:1000px;
+            margin:20px auto;
+        }
+
+        section{
+            background:white;
+            padding:20px;
+            margin-bottom:20px;
+            border-radius:10px;
+            box-shadow:0 2px 5px rgba(0,0,0,0.1);
+        }
+
+        h2{
+            margin-bottom:15px;
+            color:#4a90e2;
+        }
+
+        .skills ul,
+        .hobbies ul{
+            list-style:none;
+        }
+
+        .skills li,
+        .hobbies li{
+            background:#e3f2fd;
+            display:inline-block;
+            margin:5px;
+            padding:8px 15px;
+            border-radius:20px;
+        }
+
+        .projects{
+            display:grid;
+            grid-template-columns:repeat(auto-fit, minmax(250px, 1fr));
+            gap:20px;
+        }
+
+        .project-card{
+            background:#fafafa;
+            padding:15px;
+            border-radius:10px;
+            border:1px solid #ddd;
+            text-align:center;
+        }
+
+        .project-card img{
+            width:100%;
+            border-radius:10px;
+            margin-bottom:10px;
+        }
+
+        .social-links a{
+            text-decoration:none;
+            color:#333;
+            font-size:25px;
+            margin-right:15px;
+        }
+
+        .social-links a:hover{
+            color:#4a90e2;
+        }
+
+        footer{
+            text-align:center;
+            background:#333;
+            color:white;
+            padding:15px;
+            margin-top:20px;
+        }
+
+        @media(max-width:768px){
+
+            header{
+                padding:30px 10px;
+            }
+
+            nav a{
+                display:block;
+                margin:10px 0;
+            }
+
+            .projects{
+                grid-template-columns:1fr;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Header Section -->
+    <header>
+        <img src="image.jpeg" alt="Profile Picture">
+        <h1>BINDUSREE</h1>
+        <p>Web Developer | Student | Tech Enthusiast</p>
+    </header>
+
+    <!-- Navigation -->
+    <nav>
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#hobbies">Hobbies</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+    </nav>
+
+    <div class="container">
+
+        <!-- About Section -->
+        <section id="about">
+            <h2>About Me</h2>
+            <p>
+                Hello! I'm a passionate web development learner who enjoys creating
+                beautiful and responsive websites. I love learning new technologies
+                and improving my coding skills every day.
+            </p>
+        </section>
+
+        <!-- Skills Section -->
+        <section id="skills" class="skills">
+            <h2>Skills</h2>
+            <ul>
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>JavaScript</li>
+                <li>Python</li>
+                <li>Java</li>
+            </ul>
+        </section>
+
+        <!-- Hobbies Section -->
+        <section id="hobbies" class="hobbies">
+            <h2>Hobbies & Interests</h2>
+            <ul>
+                <li>Reading</li>
+                <li>Photography</li>
+                <li>Cooking</li>
+                <li>Traveling</li>
+                <li>Music</li>
+            </ul>
+        </section>
+
+        <!-- Portfolio Projects -->
+        <section id="projects">
+            <h2>My Projects</h2>
+
+            <div class="projects">
+
+                <div class="project-card">
+                    <img src="https://via.placeholder.com/300x180" alt="Project 1">
+                    <h3>Portfolio Website</h3>
+                    <p>A personal portfolio website using HTML and CSS.</p>
+                </div>
+
+                <div class="project-card">
+                    <img src="https://via.placeholder.com/300x180" alt="Project 2">
+                    <h3>Calculator App</h3>
+                    <p>A simple calculator built using JavaScript.</p>
+                </div>
+
+                <div class="project-card">
+                    <img src="https://via.placeholder.com/300x180" alt="Project 3">
+                    <h3>To-Do List</h3>
+                    <p>A task management web app using JavaScript.</p>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact">
+            <h2>Contact Information</h2>
+
+            <p><strong>Email:</strong> bindusree@email.com</p>
+            <p><strong>Phone:</strong> +91 9812763450</p>
+
+            <br>
+
+            <div class="social-links">
+                <a href="https://www.linkedin.com/in/poloju-bindusree" target="_blank">
+                    <i class="fa-brands fa-linkedin"></i>
+                </a>
+
+                <a href="https://github.com/poloju-bindu" target="_blank">
+                    <i class="fa-brands fa-github"></i>
+                </a>
+
+                <a href="https://instagram.com" target="_blank">
+                    <i class="fa-brands fa-instagram"></i>
+                </a>
+            </div>
+        </section>
+
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <p>© 2026 Bindusree | Personal Profile Web Page</p>
+    </footer>
+
+</body>
+</html>
